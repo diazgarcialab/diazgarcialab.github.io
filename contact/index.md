@@ -26,9 +26,11 @@ nav:
 
 ### <i class="fas fa-mail-bulk"></i>Mailing Address
 
+<p style="text-align: center !important;">
 1136 Robert Mondavi Institute North<br>
 595 Hilgard Lane, Davis, CA 95616-5270<br>
 United States
+</p>
 
 {% endcapture %}
 {% include two-col.html col1=col1 col2=col2 %}
