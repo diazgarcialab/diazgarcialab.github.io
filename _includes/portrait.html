@@ -1,12 +1,12 @@
 {%- if include.style == "small" -%}
-  {%- assign width = 100 -%}
+  {%- assign width = 140 -%}
 {%- else -%}
-  {%- assign width = 150 -%}
+  {%- assign width = 200 -%}
 {%- endif -%}
 
 {%- assign emptyarray = "" | split: "," -%}
 {%- assign id = include.slug | default: include.id | default: "" -%}
-{%- assign members = site.members | default: emptyarray -%} 
+{%- assign members = site.members | default: emptyarray -%}
 
 {%- assign member = nil -%}
 {%- for m in members -%}
@@ -22,11 +22,6 @@
 
   {%- assign placeholder = "images/placeholder.svg" | relative_url -%}
 
-  {%- assign role = member.role | default: "" -%}
-  {%- if role -%}
-    {%- include role.html type=role -%}
-  {%- endif -%}
-  
   {%- assign name = member.name | default: "" -%}
   {%- assign image = member.image | default: "" -%}
   <span class="portrait_image">
@@ -38,18 +33,21 @@
     >
   </span>
 
-  {%- if name -%}
-    <span class="portrait_name">
-      {{ name }}
-    </span>
-  {%- endif -%}
+  <span class="portrait_info">
+    {%- if name -%}
+      <span class="portrait_name">
+        {{ name }}
+      </span>
+    {%- endif -%}
 
-  {%- assign description = member.description | default: "" -%}
-  {%- if description -%}
-    <span class="portrait_description">
-      {{ description }}
-    </span>
-  {%- endif -%}
+    {%- assign description = member.description | default: "" -%}
+    {%- if description -%}
+      <span class="portrait_description">
+        {{ description }}
+      </span>
+    {%- endif -%}
+
+  </span>
 
 </a>
 {:/}

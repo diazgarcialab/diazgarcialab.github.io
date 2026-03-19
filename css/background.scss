@@ -21,17 +21,16 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     opacity: 0.2;
-    // filter: blur(5px);
     z-index: -1;
   }
 
   &[data-dark="false"] {
-    background: $gray-100;
-    color: $black;
+    background: var(--bg-card);
+    color: var(--fg-text);
   }
 
   &[data-dark="true"] {
-    background: $gray-900;
-    color: $white;
+    background: var(--bg-canvas);
+    color: var(--fg-text);
   }
 }

@@ -1,98 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-// colors for links, tags, etc.
-// see colors.scss for available colors
-$accent: $blue-gray-500;
-//$light-accent: $light-blue-200;
-$light-accent: $blue-gray-500;
-$dark-accent: $light-blue-900;
+// Brand accent (used by SCSS-level references)
+$accent: #38a169;
+$light-accent: #68d391;
+$dark-accent: #2f855a;
 
-// font types
-// also see /_includes/fonts.html to change fonts
-$serif: "Poppins", sans-serif; // Set Poppins as the primary font
-$sans: "Poppins", sans-serif;  // Apply Poppins to sans-serif elements
-$mono: "Courier New", monospace; // Keep mono as a true monospace font
+// Font types
+$serif: "Poppins", sans-serif;
+$sans: "Poppins", sans-serif;
+$mono: "Courier New", monospace;
 
-// line spacing
+// Line spacing
 $spacing: 1.5;
 
-// transitions
-$fast: 0.25s ease;
+// Transitions
+$fast: 0.15s ease;
 $slow: 0.5s ease;
 
-// effects
-$shadow: 0 0 5px 0 #00000055;
+// Effects
+$shadow: var(--shadow);
 
-// screen widths
-// used by various components
-$page: 900px; // max-width of the main page column
-$tablet: 800px; // screen width cutoff point for tablets
-$phone: 500px; // screen width cutoff point for phones
+// Screen widths
+$page: 900px;
+$tablet: 800px;
+$phone: 500px;
 
+// Border radius
+$radius: 10px;
+$radius-lg: 12px;
 
-// Dark Theme Settings
-$background-color: #000000; // Black background
-$text-color: #ffffff; // White text
+// Body base styles are handled by CSS variables in theme-vars.scss
+// and applied in all.scss
 
-// Apply dark theme colors to the body
-body {
-    background-color: $background-color;
-    color: $text-color;
-}
-
-// Ensure links are visible on dark background
+// Links use CSS variables
 a {
-    color: #1E90FF; // Bright blue
+  color: var(--link);
+  transition: color $fast;
 }
 
 a:hover {
-    color: #FFD700; // Gold hover effect
-}
-
-// Adjust headers, footers, and sections to match the dark theme
-header, footer, section, .content {
-    background-color: $background-color;
-    color: $text-color;
-}
-
-// Style buttons for dark theme
-button {
-    background-color: #222222;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-}
-
-button:hover {
-    background-color: #444444;
-    color: #FFD700; // Gold on hover
-}
-
-// Ensure all sections, lists, and included components use the dark theme
-section, .content, .post, .list, .card, .search-info {
-    background-color: #000000 !important;
-    color: #ffffff !important;
-}
-
-// Override specific areas that might have a forced white background
-div, p, span {
-    background-color: transparent !important;
-    color: #ffffff !important;
-}
-
-// Fix for search and list components inside sections
-.search-info, .list, .card {
-    background-color: #111111 !important; // Slightly lighter black for contrast
-    color: #ffffff !important;
-}
-
-// Adjust buttons inside sections (if needed)
-button {
-    background-color: #222222 !important;
-    color: #ffffff !important;
-    border: 1px solid #ffffff !important;
-}
-
-button:hover {
-    background-color: #444444 !important;
-    color: #FFD700 !important;
+  color: var(--link-hover);
 }

@@ -1,6 +1,6 @@
 ---
 name: Jose Munoz
-image: images/labmembers/new_member.png
+image: images/placeholder.svg
 description: Ph.D. student
 tier: third 
 aliases:

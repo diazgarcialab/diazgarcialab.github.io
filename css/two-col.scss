@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
+  align-items: center;
 
   @media (max-width: $phone) {
     grid-template-columns: 1fr;

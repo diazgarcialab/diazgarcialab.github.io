@@ -8,58 +8,75 @@
 .portrait {
   position: relative;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: stretch;
   flex-direction: column;
-  gap: 10px;
   width: var(--width);
-  margin: calc(20 * var(--width) / 150);
-  text-align: center;
-  line-height: $spacing;
+  margin: 12px;
   text-decoration: none;
+  border-radius: $radius-lg;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  transition: transform $fast, border-color $fast, box-shadow $fast;
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
 
   .portrait_image {
-    display: inline-block;
-    width: var(--width);
+    display: block;
+    width: 100%;
     height: var(--width);
-    border-radius: 999px;
     overflow: hidden;
-    box-shadow: $shadow;
 
     img {
       object-fit: cover;
       width: 100%;
       height: 100%;
+      transition: transform 0.3s ease;
     }
+  }
+
+  &:hover .portrait_image img {
+    transform: scale(1.03);
+  }
+
+  .portrait_info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 14px 16px;
   }
 
   .portrait_name {
     font-family: $sans;
     font-size: 0.9rem;
-    font-weight: $medium;
+    font-weight: $semi-bold;
+    color: var(--fg-heading);
+    line-height: 1.3;
   }
 
   .portrait_description {
-    margin-top: -10px;
     font-family: $sans;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    color: var(--fg-muted);
+    line-height: 1.3;
   }
 
-  .role {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: calc(0.13 * var(--width));
-    top: calc(0.13 * var(--width));
-    margin: 0;
-    width: calc(0.25 * var(--width));
-    height: calc(0.25 * var(--width));
-    font-size: calc(16 * var(--width) / 150);
-    background: $white;
-    color: $gray-500;
-    border-radius: 999px;
-    transform: translate(-50%, -50%);
-    box-shadow: $shadow;
+  .portrait_role {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 3px 8px;
+    font-family: $sans;
+    font-size: 0.7rem;
+    font-weight: $semi-bold;
+    color: var(--accent-text);
+    background: var(--accent);
+    border-radius: 4px;
+    align-self: flex-start;
+    line-height: 1.3;
   }
 }

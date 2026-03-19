@@ -5,7 +5,9 @@ nav:
   tooltip: About our team
 ---
 
-# <i class="fas fa-users"></i>Team
+{% include section.html full=true %}
+
+{% include hero.html image="images/vineyard.png" title="Our Team" subtitle="A multidisciplinary team working towards high-quality grapes in California" %}
 
 {% include section.html %}
 

@@ -10,30 +10,35 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 6px;
   max-width: 100%;
   margin: 10px 0;
   @include trim-v-margins;
 
   .tag {
     max-width: 100%;
-    padding: 5px 10px;
-    border-radius: 999px;
-    color: $white;
-    background: $light-accent;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: $medium;
+    color: var(--accent-text);
+    background: var(--accent);
     text-decoration: none;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    transition: background $fast;
+    transition: background $fast, opacity $fast;
+    opacity: 0.85;
 
     &:hover,
     &[data-active="true"] {
-      background: $gray-400;
+      opacity: 1;
+      background: var(--accent-hover);
     }
 
     &[data-highlight="true"] {
-      background: $accent;
+      opacity: 1;
+      background: var(--accent);
     }
   }
 }

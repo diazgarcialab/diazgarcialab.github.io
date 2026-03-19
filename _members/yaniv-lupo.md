@@ -1,6 +1,6 @@
 ---
 name: Yaniv Lupo
-image: images/labmembers/new_member.png
+image: images/placeholder.svg
 description: Postdoc
 tier: third
 ---

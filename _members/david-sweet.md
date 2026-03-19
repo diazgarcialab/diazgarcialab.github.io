@@ -1,6 +1,6 @@
 ---
 name: David Sweet
-image: images/labmembers/new_member.png
+image: images/placeholder.svg
 description: Undergraduate Research Intern
 tier: third
 ---

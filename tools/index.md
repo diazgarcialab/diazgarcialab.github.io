@@ -5,7 +5,7 @@ nav:
   tooltip: Our germplasm collection
 ---
 
-# <i class="fas fa-tools"></i>Germplasm
+# <i class="fas fa-dna"></i>Germplasm
 
 Our grapevine breeding program harbors a large collection of *Vitis* germplasm and grape varieties. As we primarily focus on rootstock and wine grape breeding, most of our materials contain useful allele variation for resistance/tolerance to biotic and abiotic stressors, as well as wine quality characteristics. Below there is a list of the germplasm found in our collection, and some of the rootstocks/scions developed by previous breeders in the program. 
 

@@ -10,17 +10,17 @@ h2,
 h3,
 h4 {
   font-family: $sans;
-  font-weight: $medium;
+  font-weight: $semi-bold;
   line-height: $spacing - 0.3;
   margin: 40px 0 20px 0;
   @include trim-v-margins;
   padding: 10px 0;
+  color: var(--fg-heading);
 }
 
 h1 {
   font-size: 1.4rem;
-  letter-spacing: 2px;
-  text-transform: lowercase;
+  letter-spacing: 1px;
   text-align: center;
 
   & + p {
@@ -30,19 +30,16 @@ h1 {
 
 h2 {
   font-size: 1.3rem;
-  letter-spacing: 1px;
-  text-transform: lowercase;
+  letter-spacing: 0.5px;
   text-align: center;
 }
 
 h3 {
   font-size: 1.2rem;
   text-align: center;
-  text-transform: lowercase;
 }
 
 h4 {
   font-size: 1rem;
-  text-transform: lowercase;
   text-align: left;
 }

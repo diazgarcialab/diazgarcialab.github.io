@@ -1,27 +1,25 @@
-{%- assign background = page.footer | default: site.footer | default: "none" -%}
-{%- if background == "none" -%}
-  {%- assign background = nil -%}
-{%- endif -%}
-
-{%- assign dark = page.footer-dark -%}
-{%- if dark == nil -%}
-  {%- assign dark = site.footer-dark -%}
-{%- endif -%}
-{%- if dark == nil -%}
-  {%- assign dark = true -%}
-{%- endif -%}
-
-<footer {% if background %}class="background"{% endif %} {% if background %}style="--background: url('{{ background | relative_url }}')"{% endif %} data-dark="{{ dark }}">
-
-  <!--
-  <div class="footer_row">
-    Extra details like contact info or address
-  </div>
-  -->
+<footer>
 
   <div class="footer_row">
+    {%- assign avatar_inserted = false -%}
+    {%- assign non_email_count = 0 -%}
     {%- for entry in site.links -%}
       {%- assign key = entry[0] -%}
+      {%- if key == "email" -%}{%- continue -%}{%- endif -%}
+      {%- assign non_email_count = non_email_count | plus: 1 -%}
+    {%- endfor -%}
+    {%- assign mid = non_email_count | divided_by: 2 | plus: 1 -%}
+    {%- assign idx = 0 -%}
+    {%- for entry in site.links -%}
+      {%- assign key = entry[0] -%}
+      {%- if key == "email" -%}{%- continue -%}{%- endif -%}
+      {%- assign idx = idx | plus: 1 -%}
+      {%- if idx == mid and avatar_inserted == false -%}
+        <a href="mailto:{{ site.links.email }}" class="footer_avatar" data-tooltip="Email">
+          <img src="{{ 'images/ldg-avatar.png' | relative_url }}" alt="Avatar" />
+        </a>
+        {%- assign avatar_inserted = true -%}
+      {%- endif -%}
       {%- assign value = entry[1] -%}
       {%- include link.html type=key icon="" tooltip="" link=value -%}
     {%- endfor -%}
@@ -30,8 +28,6 @@
   <div class="footer_row">
     <span>
       &copy; {{ site.time | date: '%Y' }} {{ site.title }}
-      &nbsp; | &nbsp;
-      Built with <a href="https://github.com/greenelab/lab-website-template">Lab Website Template</a>
     </span>
   </div>
 

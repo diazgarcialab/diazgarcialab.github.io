@@ -14,14 +14,14 @@ button {
   margin: 0;
   padding: 7.5px 15px;
   border: none;
-  border-radius: 5px;
-  background: $accent;
-  color: $white;
+  border-radius: $radius;
+  background: var(--accent);
+  color: var(--accent-text);
   font-size: 1rem;
   cursor: pointer;
   transition: background $fast;
 
   &:hover {
-    background: $gray-500;
+    background: var(--accent-hover);
   }
 }

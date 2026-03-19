@@ -1,23 +1,24 @@
 ---
 title: Home
+nav:
+  order: 0
+  tooltip: Home page
 ---
 
-# university of california, davis | grapevine breeding
+{% include section.html full=true %}
 
-The Grapevine Breeding Program at The University of California - Davis is part of the [Viticulture and Enology Department](https://wineserver.ucdavis.edu/#/), which has been at the forefront of innovation in grape growing and winemaking for over 135 years, shaping the industry in California and beyond. 
-
-
-
-{% include section.html full=true%}
-
-{% include banner.html image="images/bar_extended.jpg" %}
+{% include hero.html image="images/vines.png" title="Grapevine Breeding Program" subtitle="University of California, Davis" %}
 
 {% include section.html %}
 
-# highlights
+The Grapevine Breeding Program at The University of California - Davis is part of the [Viticulture and Enology Department](https://wineserver.ucdavis.edu/#/), which has been at the forefront of innovation in grape growing and winemaking for over 135 years, shaping the industry in California and beyond.
+
+{% include section.html %}
+
+## Highlights
 
 {% capture text %}
-Our breeding program develops high-quality grape cultivars and rootstocks resistant/tolerant to diseases, pests, and other stresses in the environment. For this purpose, we use the large genetic and phenotypic diversity found across many American *Vitis* species. Our group collaborates with other research groups and extensionists in areas such as genomics, population genetics, plant physiology, machine learning, engineering, and others. 
+Our breeding program develops high-quality grape cultivars and rootstocks resistant/tolerant to diseases, pests, and other stresses in the environment. For this purpose, we use the large genetic and phenotypic diversity found across many American *Vitis* species. Our group collaborates with other research groups and extensionists in areas such as genomics, population genetics, plant physiology, machine learning, engineering, and others.
 
 {%
   include link.html
@@ -38,7 +39,7 @@ Our breeding program develops high-quality grape cultivars and rootstocks resist
 %}
 
 {% capture text %}
-Our breeding program at UC Davis houses one of the largest collections of Vitis germplasm in the world. Germplasm collections made by Drs. [Harold Olmo](https://wineserver.ucdavis.edu/people/harold-olmo#/) and [Andy Walker](https://wineserver.ucdavis.edu/people/m-walker#/) for more than six decades resulted in thousands of accessions, spanning more than 40 different species. 
+Our breeding program at UC Davis houses one of the largest collections of Vitis germplasm in the world. Germplasm collections made by Drs. [Harold Olmo](https://wineserver.ucdavis.edu/people/harold-olmo#/) and [Andy Walker](https://wineserver.ucdavis.edu/people/m-walker#/) for more than six decades resulted in thousands of accessions, spanning more than 40 different species.
 
 {%
   include link.html

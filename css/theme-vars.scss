@@ -1,0 +1,101 @@
+---
+---
+
+// Light/Dark theme CSS custom properties
+// Ported from VineyardDB frontend design system
+
+// Light mode (default)
+:root,
+[data-theme="light"] {
+  --bg-canvas: #f0f2f5;
+  --bg-card: #ffffff;
+  --bg-emphasized: #e8eaed;
+  --fg-text: #2d3748;
+  --fg-heading: #2d3748;
+  --fg-muted: #718096;
+  --border: #cbd5e0;
+  --border-subtle: #e2e8f0;
+  --link: #2f855a;
+  --link-hover: #276749;
+  --accent: #38a169;
+  --accent-hover: #2f855a;
+  --accent-text: #ffffff;
+  --nav-active-bg: #f0fdf4;
+  --nav-active-color: #276749;
+  --nav-hover-bg: #f2f2f2;
+  --header-bg: rgba(255, 255, 255, 0.6);
+  --header-text: #1a202c;
+  --header-border: #e2e8f0;
+  --footer-bg: #ffffff;
+  --footer-text: #2d3748;
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  --role-bg: #ffffff;
+  --role-text: #718096;
+  --logo-color: #2f855a;
+  --theme-toggle-color: #8B6914;
+  --code-bg: #f2f2f2;
+}
+
+// Dark mode
+[data-theme="dark"] {
+  --bg-canvas: #1a202c;
+  --bg-card: #2d3748;
+  --bg-emphasized: rgba(255, 255, 255, 0.08);
+  --fg-text: #ffffff;
+  --fg-heading: #ffffff;
+  --fg-muted: #a0aec0;
+  --border: #718096;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --link: #68d391;
+  --link-hover: #38a169;
+  --accent: #38a169;
+  --accent-hover: #2f855a;
+  --accent-text: #ffffff;
+  --nav-active-bg: rgba(72, 187, 120, 0.12);
+  --nav-active-color: #68d391;
+  --nav-hover-bg: rgba(255, 255, 255, 0.1);
+  --header-bg: rgba(26, 32, 44, 0.6);
+  --header-text: #ffffff;
+  --header-border: rgba(255, 255, 255, 0.1);
+  --footer-bg: #1a202c;
+  --footer-text: #ffffff;
+  --shadow: none;
+  --role-bg: #2d3748;
+  --role-text: #a0aec0;
+  --logo-color: #DCAA00;
+  --theme-toggle-color: #2f855a;
+  --code-bg: #2d3748;
+}
+
+// Auto-detect system preference when no explicit theme is set
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --bg-canvas: #1a202c;
+    --bg-card: #2d3748;
+    --bg-emphasized: rgba(255, 255, 255, 0.08);
+    --fg-text: #ffffff;
+    --fg-heading: #ffffff;
+    --fg-muted: #a0aec0;
+    --border: #718096;
+    --border-subtle: rgba(255, 255, 255, 0.1);
+    --link: #68d391;
+    --link-hover: #38a169;
+    --accent: #38a169;
+    --accent-hover: #2f855a;
+    --accent-text: #ffffff;
+    --nav-active-bg: rgba(72, 187, 120, 0.12);
+    --nav-active-color: #68d391;
+    --nav-hover-bg: rgba(255, 255, 255, 0.1);
+    --header-bg: rgba(26, 32, 44, 0.6);
+    --header-text: #ffffff;
+    --header-border: rgba(255, 255, 255, 0.1);
+    --footer-bg: #1a202c;
+    --footer-text: #ffffff;
+    --shadow: none;
+    --role-bg: #2d3748;
+    --role-text: #a0aec0;
+    --logo-color: #DCAA00;
+    --theme-toggle-color: #2f855a;
+    --code-bg: #2d3748;
+  }
+}

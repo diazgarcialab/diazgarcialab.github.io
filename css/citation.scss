@@ -15,26 +15,43 @@
   margin: 30px 0;
   @include trim-v-margins;
   padding: 20px;
-  border: solid 2px $gray-300;
+  border: solid 1px var(--border);
+  border-radius: $radius-lg;
   text-align: left;
+  background: var(--bg-card);
+  transition: border-color $fast, background-color 0.2s ease;
 
   &[data-style="rich"] {
     padding: 0;
     border: none;
+    background: transparent;
   }
 
   .citation_image {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     max-width: 100%;
     flex-shrink: 0;
     overflow: hidden;
-    box-shadow: $shadow;
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    transition: border-color $fast, transform $fast, box-shadow $fast;
 
     img {
       object-fit: cover;
       width: 100%;
       height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      border-color: var(--accent);
+      transform: scale(1.05);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+
+      img {
+        transform: scale(1.08);
+      }
     }
   }
 

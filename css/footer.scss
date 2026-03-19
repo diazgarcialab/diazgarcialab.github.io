@@ -12,10 +12,11 @@ footer {
   flex-direction: column;
   gap: 20px;
   padding: 40px;
-  color: $white;
-  background: $gray-800;
+  color: var(--footer-text);
+  background: var(--footer-bg);
   text-align: center;
-  box-shadow: $shadow;
+  border-top: 1px solid var(--border-subtle);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 
   & * {
     font-family: $sans;
@@ -31,6 +32,7 @@ footer {
 
     .link {
       margin: 0;
+      transition: opacity $fast;
     }
 
     &:hover .link {
@@ -39,6 +41,27 @@ footer {
 
     .link:hover {
       opacity: 1;
+    }
+  }
+
+  .footer_row .fa-github {
+    font-size: 1.6em;
+  }
+
+  .footer_avatar {
+    display: inline-flex;
+    align-items: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: transform $fast;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
     }
   }
 
