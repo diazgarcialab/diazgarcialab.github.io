@@ -94,7 +94,13 @@
   }
 
   @media (max-width: $tablet) {
-    min-height: 280px;
+    min-height: 220px !important;
+    max-height: none;
+    aspect-ratio: auto;
+
+    .hero_content {
+      padding: 30px 20px;
+    }
 
     .hero_title {
       font-size: 1.6rem;
@@ -106,10 +112,38 @@
   }
 
   @media (max-width: $phone) {
-    min-height: 250px;
+    min-height: auto;
+    max-height: none;
+    aspect-ratio: auto;
+    overflow: visible;
 
     .hero_title {
       font-size: 1.3rem;
+    }
+
+    .hero_content {
+      padding: 20px 15px;
+    }
+
+    .hero_subtitle {
+      font-size: 0.9rem;
+      margin: 8px 0 0;
+    }
+
+    .hero_actions {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+
+      .link[data-style="button"] {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        justify-content: center;
+      }
     }
   }
 }

@@ -29,7 +29,6 @@ body {
     padding: 60px Max(40px, calc((100% - #{$page}) / 2));
     text-align: center;
     color: var(--fg-text);
-    transition: background-color 0.2s ease, color 0.2s ease;
 
     // Body text left-aligned for readability
     p {

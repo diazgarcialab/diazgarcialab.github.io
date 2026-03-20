@@ -16,7 +16,6 @@ footer {
   background: var(--footer-bg);
   text-align: center;
   border-top: 1px solid var(--border-subtle);
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 
   & * {
     font-family: $sans;

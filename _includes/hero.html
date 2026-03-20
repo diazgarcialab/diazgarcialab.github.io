@@ -1,9 +1,10 @@
 {%- assign image = include.image -%}
 {%- assign title = include.title -%}
 {%- assign subtitle = include.subtitle -%}
+{%- assign position = include.position | default: "center center" -%}
 
 <div class="hero">
-  <img src="{{ image | relative_url }}" alt="" class="hero_image" loading="eager" />
+  <img src="{{ image | relative_url }}" alt="" class="hero_image" loading="eager" style="object-position: {{ position }};" />
   <div class="hero_overlay"></div>
   <div class="hero_content">
     {% if title %}

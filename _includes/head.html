@@ -4,15 +4,5 @@
   {% include favicons.html %}
   {% include fonts.html %}
   {% include styles.html %}
-  <!-- Early theme detection to prevent flash of wrong theme -->
-  <script>
-    (function() {
-      var theme = localStorage.getItem('lab-theme');
-      if (!theme) {
-        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      }
-      document.documentElement.setAttribute('data-theme', theme);
-    })();
-  </script>
   {% include scripts.html %}
 </head>
