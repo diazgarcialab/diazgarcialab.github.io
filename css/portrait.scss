@@ -80,3 +80,19 @@
     line-height: 1.3;
   }
 }
+
+.member_bio {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 24px 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: $radius-lg;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--fg-text);
+
+  p {
+    margin: 0;
+  }
+}

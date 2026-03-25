@@ -3,8 +3,9 @@ name: Efrain Torres-Lomas
 image: images/labmembers/efrain.jpeg
 description: Data Scientist
 tier: second
+order: 3
 aliases:
-  - Efrain Torres Lomas
+  - Efrain Torres
 
 ---
 

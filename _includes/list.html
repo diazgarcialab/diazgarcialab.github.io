@@ -24,6 +24,10 @@
   {%- endif -%}
 {%- endfor -%}
 
+{%- if data.first.order -%}
+  {%- assign data = data | sort: "order" -%}
+{%- endif -%}
+
 {%- assign years = data | group_by_exp: "d", "d.date | date: '%Y'" | sort: "name" | reverse -%}
 
 {%- for year in years -%}
