@@ -1,9 +1,9 @@
 ---
 name: David Sweet
-image: images/placeholder.svg
+image: images/labmembers/grape1.jpg
+image_width: 300px
 description: Undergraduate Research Intern
-tier: third
-order: 6
+tier: past
 ---
 
 I am an undergraduate student majoring in Environmental Science and Management at UC Davis.

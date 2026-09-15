@@ -1,6 +1,6 @@
 ---
 name: Jose Munoz
-image: images/labmembers/jose.jpeg
+image: images/labmembers/jose.jpg
 description: Ph.D. student
 tier: third
 order: 2

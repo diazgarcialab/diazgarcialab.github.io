@@ -1,6 +1,7 @@
 ---
 name: Luis Diaz-Garcia
-image: images/labmembers/diazgarcia.jpg
+image: images/labmembers/luis.jpg
+image_width: 300px
 description: Principal Investigator
 tier: first
 order: 1

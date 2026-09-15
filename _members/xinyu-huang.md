@@ -1,9 +1,9 @@
 ---
 name: Xinyu Huang
-image: images/placeholder.svg
+image: images/labmembers/grape3.jpg
+image_width: 300px
 description: Undergraduate Research Intern
-tier: third
-order: 7
+tier: past
 ---
 
 I am an undergraduate student majoring in Environmental Science and Management at UC Davis.

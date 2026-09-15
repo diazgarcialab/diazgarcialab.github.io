@@ -1,6 +1,7 @@
 ---
 name: Ana Gaspar
-image: images/labmembers/paulina.png
+image: images/labmembers/paulina.jpg
+image_width: 300px
 description: Lab manager
 tier: second
 order: 1

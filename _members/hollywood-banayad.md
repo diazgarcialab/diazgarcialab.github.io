@@ -1,6 +1,7 @@
 ---
 name: Hollywood Banayad
 image: images/labmembers/hollywood.jpg
+image_width: 300px
 description: M.Sc. student
 tier: third
 order: 4

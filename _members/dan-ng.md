@@ -1,6 +1,7 @@
 ---
 name: Dan Ng
-image: images/labmembers/dan_ng.jpeg
+image: images/labmembers/dan.jpg
+image_width: 300px
 description: Lab manager
 tier: past
 aliases:
