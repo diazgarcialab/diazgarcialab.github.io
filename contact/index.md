@@ -11,14 +11,14 @@ nav:
 
 {% include section.html full=true %}
 
-{% include hero.html image="images/mondavi.jpg" title="Contact Us" subtitle="The Diaz-Garcia lab is part of the Viticulture and Enology Department at UC Davis." content=hero_content %}
+{% include hero.html image="images/mondavi_poly.jpg" title="Contact Us" subtitle="The Diaz-Garcia lab is part of the Viticulture and Enology Department at UC Davis." content=hero_content %}
 
 {% include section.html %}
 
 {% capture col1 %}
 {%
   include figure.html
-  image="images/UC-Davis-aerial-water-tower.jpg"
+  image="images/UC-Davis-aerial-water-tower_poly.jpg"
   caption="The University of California - Davis"
 %}
 {% endcapture %}

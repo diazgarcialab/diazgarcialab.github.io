@@ -7,7 +7,7 @@ nav:
 
 {% include section.html full=true %}
 
-{% include hero.html image="images/niebla.png" title="Research" subtitle="Grapevine breeding, genetics, and genomics at UC Davis" %}
+{% include hero.html image="images/niebla_poly.jpg" title="Research" subtitle="Grapevine breeding, genetics, and genomics at UC Davis" %}
 
 {% include section.html %}
 

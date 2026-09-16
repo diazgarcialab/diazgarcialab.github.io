@@ -3,7 +3,7 @@ name: Jose Munoz
 image: images/labmembers/jose.jpg
 description: Ph.D. student
 tier: third
-order: 2
+order: 3
 aliases:
   - Jose Munoz
 image_width: 300px

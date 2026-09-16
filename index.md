@@ -7,7 +7,7 @@ nav:
 
 {% include section.html full=true %}
 
-{% include hero.html image="images/vines.png" title="Grapevine Breeding Program" subtitle="University of California, Davis" %}
+{% include hero.html image="images/vine_poly.jpg" title="Grapevine Breeding Program" subtitle="University of California, Davis" %}
 
 {% include section.html %}
 

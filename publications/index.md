@@ -7,7 +7,7 @@ nav:
 
 {% include section.html full=true %}
 
-{% include hero.html image="images/grapecrush.png" title="Publications" subtitle="Research output from the UC Davis Grapevine Breeding Program" %}
+{% include hero.html image="images/grapecrush_poly.jpg" title="Publications" subtitle="Research output from the UC Davis Grapevine Breeding Program" %}
 
 {% include section.html %}
 

@@ -3,8 +3,8 @@ name: Sadikshya Sharma
 image: images/labmembers/sadikshya.jpg
 image_width: 300px
 description: Ph.D. student
-tier: third
-order: 1
+tier: past
+order: 2
 aliases:
   - Sadikshya Sharma
 links:

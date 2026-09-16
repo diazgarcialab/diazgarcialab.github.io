@@ -4,6 +4,7 @@ image: images/labmembers/dan.jpg
 image_width: 300px
 description: Lab manager
 tier: past
+order: 1
 aliases:
   - Dan Ng
 
