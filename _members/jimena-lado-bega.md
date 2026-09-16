@@ -1,6 +1,7 @@
 ---
 name: Jimena Lado Bega
-image: images/labmembers/jimena_lado.jpg
+image: images/labmembers/jimena.jpg
+image_width: 300px
 description: Visiting MSc student
 tier: past
 order: 6

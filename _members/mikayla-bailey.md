@@ -1,6 +1,7 @@
 ---
 name: Mikayla Bailey
 image: images/labmembers/mikayla.jpg
+image_width: 300px
 description: Undergraduate Research Intern
 tier: past
 order: 7
