@@ -15,14 +15,12 @@ nav:
 
 {% include section.html %}
 
-{% capture col1 %}
 {%
   include figure.html
   image="images/UC-Davis-aerial-water-tower_poly.jpg"
   caption="The University of California - Davis"
+  width="100%"
 %}
-{% endcapture %}
-{% capture col2 %}
 
 ### <i class="fas fa-mail-bulk"></i>Mailing Address
 
@@ -31,6 +29,3 @@ nav:
 595 Hilgard Lane, Davis, CA 95616-5270<br>
 United States
 </p>
-
-{% endcapture %}
-{% include two-col.html col1=col1 col2=col2 %}
