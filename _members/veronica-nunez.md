@@ -1,6 +1,7 @@
 ---
 name: Veronica Nunez
-image: images/labmembers/veronica.png
+image: images/labmembers/veronica.jpg
+image_width: 300px
 description: Greenhouse manager
 tier: second
 order: 2
