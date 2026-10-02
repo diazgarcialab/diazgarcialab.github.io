@@ -1,6 +1,6 @@
 ---
 name: Tony Meeplod
-image: images/labmembers/grape2.jpg
+image: images/labmembers/tony.jpg
 image_width: 300px
 description: Ph.D. student
 tier: third
